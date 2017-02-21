@@ -1,44 +1,66 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections; 
+using System.Collections.Generic; 
+using UnityEngine; 
 
-public class ifstatements : MonoBehaviour {
-	private int worktime = 8;
+public class ifstatements : MonoBehaviour { 
+	private int centerStreet = 10; 
+	private int universityAvenue = 3; 
+	private float iFifteen = 6.5f; 
+	private float iEightyfive = 4.4f; 
 
-	// Use this for initialization
-	void Start () {
-		if (worktime <= 9){
-			print("Go to work right NOW.");
-		}
-		else if(worktime == 9){
-			print ("Welcome to work.");
-		}
-		if (worktime <= 10){
-			print("get ready for meeting with Jim.");
-		}
-		else if(worktime == 10){
-			print ("Meeting with Jim.");
-		}
-		if (worktime <= 12){
-			print("Make Lunch reservations for McDonalds.");
-		}
-		else if(worktime == 12){
-			print ("Head to Lunch.");
-		}
-		if (worktime <= 1){
-			print("Start finishing up lunch.");
-		}
-		else if(worktime == 12){
-			print ("Head back to the workplace.");
-		}
-		if (worktime <= 15){
-			print("Finish up your work so you can head home.");
-		}
-		else if(worktime == 15){
-			print ("HEAD HOME");
-		}
+	/* 
+   * == 
+   * = 
+   * < 
+   *  
+   * . 
+   * <= 
+   * >= 
+   */ 
 
-		}
+
+	// Use this for initialization 
+	void Start () { 
+		if (centerStreet < universityAvenue) 
+			print ("University Avenue is a longer street than Center Street."); 
+
+		{ 
+			if (centerStreet == universityAvenue) 
+				print ("These two streets are the same length."); 
+		} 
+		if(iFifteen != iEightyfive) 
+
+			print("The two highways are equal in length."); 
+
+		if (iFifteen == iEightyfive)  
+		{ 
+			print ("The two highways are the same in cleanliness."); 
+		} 
+		if (universityAvenue != centerStreet)  
+		{ 
+			print ("University Avenue is more cleanly than Center Street."); 
+		} 
+		if (universityAvenue > iEightyfive)  
+		{ 
+			print ("I80 is longer of a drvive than university Avenue."); 
+		} 
+		if (iFifteen < universityAvenue)  
+		{ 
+			print ("I15 is a longer drive than University Avenue."); 
+		} 
+		if (iEightyfive <= iFifteen)  
+		{ 
+			print ("On any given day i15 may be equal to or less the distance of i85."); 
+		} 
+		if (universityAvenue >= centerStreet)  
+		{ 
+			print ("On any given day, University Avenue is the same or more clean than Center Street"); 
+		} 
+		if (centerStreet != iEightyfive)  
+		{ 
+			print ("Just go walk to get some excersise."); 
+		} 
+
+	} 
+
 }
- 
-//* if statements are true then it will go to the if statments print line, but if not it will go to the else if. There can be multiple else if statements in a block of code but there can only be one else statement at the end of a block of code. 
