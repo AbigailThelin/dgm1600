@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,19 +8,19 @@ public class madLib : MonoBehaviour {
 	private string [] age = { "18" , "50" , "90" , "110" };
 	private string [] verb = { "walk" , "run" , "swim" , "driving" };
 	private string[] accident = { "crash", "fell", "died" };
-
+    
 	// Use this for initialization
 	void Start () {
 		
-		RandmomNum = Random.Range (adj);
-		RandmomNum = Random.Range (job);
-		RandmomNum = Random.Range (age);
-		RandmomNum = Random.Range (verb);
-		RandmomNum = Random.Range (accident);
+		adj1 = Random.Range ( 0 , adj.Length);
+		job1 = Random.Range (0 , job.Length);
+		age1 = Random.Range (0 , age.Length);
+		verb1 = Random.Range ( 0 , verb.Length);
+		accident = Random.Range ( 0 , accident.Length);
 
 
-		print ("Once upon a time, there was a " + adj + ":" + job + "who was " +
-			"a young" + age + "one day the man was" + verb + "and he " + 
-			accident + "THE END");
+		print ("Once upon a time, there was a " + adj1 + ":" + job1 + "who was " +
+			"a young" + age1 + "one day the man was" + verb1 + "and he " + 
+			accident1 + "THE END");
 	}
 }
