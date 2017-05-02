@@ -1,0 +1,13 @@
+Variable Examples
+
+Int: Int is an interger for example 
+	int myFavoriteColor;
+	myFavoriteNumber = 3;
+char: it is just a single charecture
+	char = F
+Double: Double is double of the float.
+	double = 3.14
+String: it is a sequence of charectures like a name or a city.
+	string = Abigail
+Book: it is one that can only have two values, like yes and no, or true and false
+	Bool = yes
